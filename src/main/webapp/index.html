@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+
+<html lang ="en-US">
+<title> Felipe E Gustavo </title>
+
+<link rel ="stylesheet" href ="felipe.css">
+
+
+<style>
+p.center {
+	text-align: center;
+	color : black;
+}
+p.esquerda {
+	text-align: center;
+	color : black;
+}
+p.direita {
+	text-align: right;
+	color: black;
+}
+
+table.login {
+	margin: 0 auto 0 auto;
+}
+
+</style>
+<script>
+	function esqueci(){
+	alert ("Esqueceu a senha");
+	window.parent.location='esqueciasenha.html';
+	}
+	function myFunction(){
+	var valorLogin = document.getElementById("login").value;
+	var valorSenha = document.getElementById("senha").value;
+
+	if (valorLogin == "") {
+
+		alert ("Digite um login");
+		
+	}else{
+	if (valorLogin == "a"){
+	if (valorSenha == "a"){	
+		
+	alert("Direcionando para o Site")
+	window.parent.location='logado.html';	
+	}
+	}
+	}
+
+	if (valorSenha == "") {
+
+		alert("Digite uma senha");
+	}
+
+}
+</script>
+
+
+<body style= "background-color:orange;">
+
+		<p class="center";	>Digite seu login e Senha.</p>
+
+<table class ="login">
+	<tr>
+	<td style="font-family:verdana;"> Login:</td>
+		<td><input type="text" id="login" name="Login" size="30"> <br /></td>
+	<tr>
+
+	<tr>
+	<td style="font-family:verdana;"> Senha:</td>
+	<td><input type="text" id="senha" name="Senha" size="30"> <br/></td>
+	</tr>
+</table>
+	<p class="center">
+	<input name="Entrar" type= "button" onClick ="myFunction()" value ="Entrar">
+	</p>
+	<p class ="center">
+	<input name="Esqueci a senha" type="button" onClick = "esqueci()" value ="Esqueci a senha">
+
+</body>
+</html>
