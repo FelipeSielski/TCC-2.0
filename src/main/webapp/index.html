@@ -27,6 +27,7 @@ table.login {
 
 </style>
 <script>
+
 	function esqueci(){
 	alert ("Esqueceu a senha");
 	window.parent.location='esqueciasenha.html';
@@ -35,30 +36,36 @@ table.login {
 	var valorLogin = document.getElementById("login").value;
 	var valorSenha = document.getElementById("senha").value;
 
-	if (valorLogin == "") {
-
+		if (valorLogin == "") {
 		alert ("Digite um login");
-		
-	}else{
+		if (valorSenha == "") {
+			alert("Digite uma senha");
+		}
+		}else{
 	if (valorLogin == "a"){
-	if (valorSenha == "a"){	
-		
+	if (valorSenha == "a"){			
 	alert("Direcionando para o Site")
-	window.parent.location='logado.html';	
+	window.parent.location='logado.html';
+
 	}
 	}
+	else{alert("Login ou senha incorreta.");}
 	}
 
 	if (valorSenha == "") {
-
 		alert("Digite uma senha");
 	}
 
 }
+	
 </script>
 
 
 <body style= "background-color:orange;">
+<body>
+
+</body>
+
 
 		<p class="center";	>Digite seu login e Senha.</p>
 
